@@ -15,7 +15,6 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
             emit(repository.getCharacterApi())
         } catch (e: Exception) {
             Log.d("RemoteApiFailed:", "failed")
-            Log.d("RemoteApiFailed:", "failed")
             emit(Resource.Failure(e))
         }
     }
