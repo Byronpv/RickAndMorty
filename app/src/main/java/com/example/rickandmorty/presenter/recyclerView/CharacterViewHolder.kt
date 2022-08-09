@@ -1,10 +1,9 @@
 package com.example.rickandmorty.presenter.recyclerView
 
-import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rickandmorty.databinding.ItemCharacterViewholderBinding
-import com.example.rickandmorty.model.CharacterModel
+import com.example.rickandmorty.data.model.CharacterModel
 import com.squareup.picasso.Picasso
 
 class CharacterViewHolder(view: View) : RecyclerView.ViewHolder(view) {

@@ -4,9 +4,9 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.rickandmorty.Repository
-import com.example.rickandmorty.data.CharacterRemoteDataSource
+import com.example.rickandmorty.data.model.dataSource.characteres.CharacterRemoteDataSource
 
-class MainViewModelFacotry() : ViewModelProvider.Factory {
+class MainViewModelFactory() : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         val repository = Repository(

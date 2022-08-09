@@ -1,6 +1,6 @@
 package com.example.rickandmorty.data.api
 
-import com.example.rickandmorty.model.CharacterListModel
+import com.example.rickandmorty.data.model.CharacterListModel
 import retrofit2.Response
 import retrofit2.http.GET
 

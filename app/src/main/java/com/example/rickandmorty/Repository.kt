@@ -1,8 +1,8 @@
 package com.example.rickandmorty
 
-import com.example.rickandmorty.data.CharacterRemoteDataSource
-import com.example.rickandmorty.model.CharacterModel
-import com.example.rickandmorty.model.Resource
+import com.example.rickandmorty.data.model.dataSource.characteres.CharacterRemoteDataSource
+import com.example.rickandmorty.data.model.CharacterModel
+import com.example.rickandmorty.data.model.Resource
 
 class Repository(val remoteCharacter: CharacterRemoteDataSource) {
 

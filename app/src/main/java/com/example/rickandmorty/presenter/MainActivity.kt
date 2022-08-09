@@ -1,6 +1,5 @@
 package com.example.rickandmorty.presenter
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,17 +9,16 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.rickandmorty.R
 import com.example.rickandmorty.databinding.ActivityMainBinding
-import com.example.rickandmorty.model.CharacterModel
-import com.example.rickandmorty.model.Resource
+import com.example.rickandmorty.data.model.CharacterModel
+import com.example.rickandmorty.data.model.Resource
 import com.example.rickandmorty.presenter.recyclerView.CharacterAdapter
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val viewModel: MainViewModel by viewModels(
-        factoryProducer = { MainViewModelFacotry() }
+        factoryProducer = { MainViewModelFactory() }
     )
 
     lateinit var adapterCharacter: CharacterAdapter
