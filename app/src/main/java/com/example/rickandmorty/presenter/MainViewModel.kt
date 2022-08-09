@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.example.rickandmorty.Repository
-import com.example.rickandmorty.model.Resource
+import com.example.rickandmorty.data.model.Resource
 import kotlinx.coroutines.Dispatchers
 
 class MainViewModel(private val repository: Repository) : ViewModel() {
@@ -14,8 +14,6 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
         try {
             emit(repository.getCharacterApi())
         } catch (e: Exception) {
-            Log.d("RemoteApiFailed:", "failed")
-            Log.d("RemoteApiFailed:", "failed")
             Log.d("RemoteApiFailed:", "failed")
             emit(Resource.Failure(e))
         }

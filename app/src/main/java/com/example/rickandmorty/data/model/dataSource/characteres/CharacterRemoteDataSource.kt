@@ -1,10 +1,10 @@
-package com.example.rickandmorty.data
+package com.example.rickandmorty.data.model.dataSource.characteres
 
 import android.util.Log
 import com.example.rickandmorty.data.api.ApiService
-import com.example.rickandmorty.model.Resource
+import com.example.rickandmorty.data.model.Resource
 import com.example.rickandmorty.core.RetrofitClient
-import com.example.rickandmorty.model.CharacterModel
+import com.example.rickandmorty.data.model.CharacterModel
 import java.lang.Exception
 
 class CharacterRemoteDataSource {
@@ -19,6 +19,7 @@ class CharacterRemoteDataSource {
         } else {
             Resource.Failure(Exception())
         }
+
     }
 
 

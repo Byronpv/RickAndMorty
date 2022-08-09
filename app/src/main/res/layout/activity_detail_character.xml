@@ -13,12 +13,15 @@
         android:layout_margin="12dp"
         android:elevation="8dp"
         app:cardCornerRadius="12dp"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
 
 
             <ImageView

@@ -2,9 +2,8 @@ package com.example.rickandmorty.presenter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.rickandmorty.R
 import com.example.rickandmorty.databinding.ActivityDetailCharacterBinding
-import com.example.rickandmorty.model.CharacterModel
+import com.example.rickandmorty.data.model.CharacterModel
 import com.squareup.picasso.Picasso
 
 class DetailCharacterActivity : AppCompatActivity() {
