@@ -10,7 +10,7 @@ import com.example.rickandmorty.data.model.dataSource.characteres.CharacterLocal
 interface CharacterRoomDao {
     @Query("SELECT * FROM charactermodelroom")
     suspend fun getAllCharacter():List<CharacterLocalRoomDataSource>
-
+    //test
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveCharacter(character:CharacterLocalRoomDataSource)
 
