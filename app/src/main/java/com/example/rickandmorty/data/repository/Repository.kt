@@ -1,4 +1,4 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.data.repository
 
 import com.example.rickandmorty.data.model.dataSource.characteres.CharacterRemoteDataSource
 import com.example.rickandmorty.data.model.CharacterModel

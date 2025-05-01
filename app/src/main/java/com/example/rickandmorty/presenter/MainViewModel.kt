@@ -3,7 +3,7 @@ package com.example.rickandmorty.presenter
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.example.rickandmorty.Repository
+import com.example.rickandmorty.data.repository.Repository
 import com.example.rickandmorty.data.model.Resource
 import kotlinx.coroutines.Dispatchers
 
