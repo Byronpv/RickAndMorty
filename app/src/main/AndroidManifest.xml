@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RickAndMorty">
         <activity
-            android:name=".presenter.DetailCharacterActivity"
+            android:name=".presenter.activities.DetailCharacterActivity"
             android:exported="false" />
         <activity
-            android:name=".presenter.MainActivity"
+            android:name=".presenter.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
