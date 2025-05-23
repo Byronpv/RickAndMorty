@@ -1,4 +1,4 @@
-package com.example.rickandmorty.presenter.adapter
+package com.example.rickandmorty.presentation.ui.adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

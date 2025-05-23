@@ -1,4 +1,4 @@
-package com.example.rickandmorty.presenter.activities
+package com.example.rickandmorty.presentation.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -25,6 +25,5 @@ class DetailCharacterActivity : AppCompatActivity() {
             txtSpeciesDescription.text = character.species
             txtGenderDescription.text = character.gender
         }
-
     }
 }

@@ -1,4 +1,4 @@
-package com.example.rickandmorty.presenter.adapter
+package com.example.rickandmorty.presentation.ui.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
