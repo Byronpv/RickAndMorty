@@ -1,15 +1,15 @@
-package com.example.rickandmorty.presenter.adapter
+package com.example.rickandmorty.presenter.recyclerView
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rickandmorty.R
-import com.example.rickandmorty.data.model.CharacterSerie
+import com.example.rickandmorty.data.model.CharacterModel
 
-class CharacterAdapter(private val onCLickListener :(CharacterSerie) -> Unit) : RecyclerView.Adapter<CharacterViewHolder>() {
+class CharacterAdapter(val onCLickListener :(CharacterModel) -> Unit) : RecyclerView.Adapter<CharacterViewHolder>() {
 
-    private var characterList = listOf<CharacterSerie>()
+    private var characterList = listOf<CharacterModel>()
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterViewHolder {
@@ -26,7 +26,7 @@ class CharacterAdapter(private val onCLickListener :(CharacterSerie) -> Unit) : 
     override fun getItemCount(): Int = characterList.size
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setCharacterList(characterList: List<CharacterSerie>) {
+    fun setCharacterList(characterList: List<CharacterModel>) {
         this.characterList = characterList
         notifyDataSetChanged()
 

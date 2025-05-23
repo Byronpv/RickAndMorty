@@ -1,4 +1,4 @@
-package com.example.rickandmorty.presenter.viewmodel
+package com.example.rickandmorty.presentation.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,7 +9,7 @@ import com.example.rickandmorty.data.Resource
 import com.example.rickandmorty.data.repository.CharacterRepository
 import kotlinx.coroutines.launch
 
-class MainViewModel(private val characterRepository: CharacterRepository) : ViewModel() {
+class CharacterViewModel(private val characterRepository: CharacterRepository) : ViewModel() {
 
     private val _characterListState = MutableLiveData<Resource<List<CharacterSerie>>>()
     val characterListState: LiveData<Resource<List<CharacterSerie>>> = _characterListState
@@ -33,5 +33,4 @@ class MainViewModel(private val characterRepository: CharacterRepository) : View
 
         }
     }
-
 }
